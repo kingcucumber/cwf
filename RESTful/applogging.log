@@ -1,0 +1,701 @@
+2012-11-06 11:34:59,088 INFO [main] TestContextManager:.retrieveTestExecutionListeners(185) - <@TestExecutionListeners is not present for class [class com.demo.rest.WorkflowServiceTest]: using defaults.>
+2012-11-06 11:34:59,207 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [com/demo/rest/applicationContext.xml]>
+2012-11-06 11:34:59,211 ERROR [main] TestContextManager:.prepareTestInstance(324) - <Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5caf993e] to prepare test instance [com.demo.rest.WorkflowServiceTest@c75e4fc]>
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:308)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:301)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:303)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:49)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [com/demo/rest/applicationContext.xml]; nested exception is java.io.FileNotFoundException: class path resource [com/demo/rest/applicationContext.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:341)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:212)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:81)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:280)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:304)
+	... 24 more
+Caused by: java.io.FileNotFoundException: class path resource [com/demo/rest/applicationContext.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:158)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:328)
+	... 33 more
+2012-11-06 12:18:21,230 INFO [main] TestContextManager:.retrieveTestExecutionListeners(185) - <@TestExecutionListeners is not present for class [class com.demo.rest.WorkflowServiceTest]: using defaults.>
+2012-11-06 12:18:21,313 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [com/demo/rest/rest-servlet.xml]>
+2012-11-06 12:18:21,315 ERROR [main] TestContextManager:.prepareTestInstance(324) - <Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4760a26f] to prepare test instance [com.demo.rest.WorkflowServiceTest@19484a05]>
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:308)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:301)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:303)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:49)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [com/demo/rest/rest-servlet.xml]; nested exception is java.io.FileNotFoundException: class path resource [com/demo/rest/rest-servlet.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:341)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:212)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:81)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:280)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:304)
+	... 24 more
+Caused by: java.io.FileNotFoundException: class path resource [com/demo/rest/rest-servlet.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:158)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:328)
+	... 33 more
+2012-11-06 12:21:23,627 INFO [main] TestContextManager:.retrieveTestExecutionListeners(185) - <@TestExecutionListeners is not present for class [class com.demo.rest.WorkflowServiceTest]: using defaults.>
+2012-11-06 12:21:23,713 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [applicationContext.xml]>
+2012-11-06 12:21:23,827 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [WEB-INF/rest-servlet.xml]>
+2012-11-06 12:21:23,830 ERROR [main] TestContextManager:.prepareTestInstance(324) - <Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@69e328e0] to prepare test instance [com.demo.rest.WorkflowServiceTest@4090c06f]>
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:308)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:301)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:303)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:49)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [WEB-INF/rest-servlet.xml]; nested exception is java.io.FileNotFoundException: class path resource [WEB-INF/rest-servlet.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:341)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:212)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:81)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:280)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:304)
+	... 24 more
+Caused by: java.io.FileNotFoundException: class path resource [WEB-INF/rest-servlet.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:158)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:328)
+	... 33 more
+2012-11-06 12:22:47,009 INFO [main] TestContextManager:.retrieveTestExecutionListeners(185) - <@TestExecutionListeners is not present for class [class com.demo.rest.WorkflowServiceTest]: using defaults.>
+2012-11-06 12:22:47,102 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [applicationContext.xml]>
+2012-11-06 12:22:47,221 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [/WEB-INF/rest-servlet.xml]>
+2012-11-06 12:22:47,223 ERROR [main] TestContextManager:.prepareTestInstance(324) - <Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@69267649] to prepare test instance [com.demo.rest.WorkflowServiceTest@5c1fe88d]>
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:308)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:301)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:303)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:49)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [/WEB-INF/rest-servlet.xml]; nested exception is java.io.FileNotFoundException: class path resource [/WEB-INF/rest-servlet.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:341)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:212)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:81)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:280)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:304)
+	... 24 more
+Caused by: java.io.FileNotFoundException: class path resource [/WEB-INF/rest-servlet.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:158)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:328)
+	... 33 more
+2012-11-06 12:24:22,866 INFO [main] TestContextManager:.retrieveTestExecutionListeners(185) - <@TestExecutionListeners is not present for class [class com.demo.rest.WorkflowServiceTest]: using defaults.>
+2012-11-06 12:24:22,944 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [applicationContext.xml]>
+2012-11-06 12:24:23,061 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [com/demo/rest/WEB-INF/rest-servlet.xml]>
+2012-11-06 12:24:23,063 ERROR [main] TestContextManager:.prepareTestInstance(324) - <Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5f49d886] to prepare test instance [com.demo.rest.WorkflowServiceTest@69267649]>
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:308)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:301)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:303)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:49)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [com/demo/rest/WEB-INF/rest-servlet.xml]; nested exception is java.io.FileNotFoundException: class path resource [com/demo/rest/WEB-INF/rest-servlet.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:341)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:212)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:81)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:280)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:304)
+	... 24 more
+Caused by: java.io.FileNotFoundException: class path resource [com/demo/rest/WEB-INF/rest-servlet.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:158)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:328)
+	... 33 more
+2012-11-06 12:25:45,601 INFO [main] TestContext:.<init>(112) - <@ContextConfiguration not found for class [class com.demo.rest.WorkflowServiceTest]>
+2012-11-06 12:25:45,604 INFO [main] TestContextManager:.retrieveTestExecutionListeners(185) - <@TestExecutionListeners is not present for class [class com.demo.rest.WorkflowServiceTest]: using defaults.>
+2012-11-06 12:25:45,628 ERROR [main] TestContextManager:.prepareTestInstance(324) - <Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@10849bc] to prepare test instance [com.demo.rest.WorkflowServiceTest@4720d62b]>
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:308)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:301)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:303)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:49)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: java.lang.IllegalArgumentException: Can not load an ApplicationContext with a NULL 'contextLoader'. Consider annotating your test class with @ContextConfiguration.
+	at org.springframework.util.Assert.notNull(Assert.java:112)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:276)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:304)
+	... 24 more
+2012-11-06 13:40:00,100 INFO [main] TestContextManager:.retrieveTestExecutionListeners(185) - <@TestExecutionListeners is not present for class [class com.demo.rest.WorkflowServiceTest]: using defaults.>
+2012-11-06 13:40:00,196 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [applicationContext.xml]>
+2012-11-06 13:40:00,305 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from URL [file:WebRoot/WEB-INF/rest-servlet.xml]>
+2012-11-06 13:40:00,445 INFO [main] GenericApplicationContext:.prepareRefresh(456) - <Refreshing org.springframework.context.support.GenericApplicationContext@32ef2c60: startup date [Tue Nov 06 13:40:00 CST 2012]; root of context hierarchy>
+2012-11-06 13:40:00,510 INFO [main] DefaultListableBeanFactory:.preInstantiateSingletons(555) - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7ab2c6a6: defining beans [workflowService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.view.BeanNameViewResolver#0]; root of factory hierarchy>
+2012-11-06 13:40:00,561 INFO [main] DefaultAnnotationHandlerMapping:.registerHandler(411) - <Mapped URL path [/services/startWorkflowService] onto handler 'workflowService'>
+2012-11-06 13:40:00,561 INFO [main] DefaultAnnotationHandlerMapping:.registerHandler(411) - <Mapped URL path [/services/getDecisionTask] onto handler 'workflowService'>
+2012-11-06 13:40:00,562 INFO [main] DefaultAnnotationHandlerMapping:.registerHandler(411) - <Mapped URL path [/services/stopWorkflowService] onto handler 'workflowService'>
+2012-11-06 13:40:00,656 ERROR [main] TestContextManager:.prepareTestInstance(324) - <Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1664023c] to prepare test instance [com.demo.rest.WorkflowServiceTest@7fcebc9f]>
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.demo.rest.WorkflowServiceTest': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springframework.mock.web.MockHttpServletRequest com.demo.rest.WorkflowServiceTest.request; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No matching bean of type [org.springframework.mock.web.MockHttpServletRequest] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:285)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1074)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:374)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:110)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:301)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:303)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:49)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springframework.mock.web.MockHttpServletRequest com.demo.rest.WorkflowServiceTest.request; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No matching bean of type [org.springframework.mock.web.MockHttpServletRequest] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:502)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:84)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:282)
+	... 26 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No matching bean of type [org.springframework.mock.web.MockHttpServletRequest] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:920)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:789)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:703)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:474)
+	... 28 more
+2012-11-06 13:40:00,670 INFO [Thread-0] GenericApplicationContext:.doClose(1002) - <Closing org.springframework.context.support.GenericApplicationContext@32ef2c60: startup date [Tue Nov 06 13:40:00 CST 2012]; root of context hierarchy>
+2012-11-06 13:40:00,671 INFO [Thread-0] DefaultListableBeanFactory:.destroySingletons(422) - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7ab2c6a6: defining beans [workflowService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.view.BeanNameViewResolver#0]; root of factory hierarchy>
+2012-11-06 13:49:08,326 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [applicationContext.xml]>
+2012-11-06 13:49:08,436 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from URL [file:WebRoot/WEB-INF/rest-servlet.xml]>
+2012-11-06 13:49:08,573 INFO [main] GenericApplicationContext:.prepareRefresh(456) - <Refreshing org.springframework.context.support.GenericApplicationContext@20c1f10e: startup date [Tue Nov 06 13:49:08 CST 2012]; root of context hierarchy>
+2012-11-06 13:49:08,638 INFO [main] DefaultListableBeanFactory:.preInstantiateSingletons(555) - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@f593af: defining beans [workflowService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.view.BeanNameViewResolver#0]; root of factory hierarchy>
+2012-11-06 13:49:08,687 INFO [main] DefaultAnnotationHandlerMapping:.registerHandler(411) - <Mapped URL path [/services/startWorkflowService] onto handler 'workflowService'>
+2012-11-06 13:49:08,687 INFO [main] DefaultAnnotationHandlerMapping:.registerHandler(411) - <Mapped URL path [/services/getDecisionTask] onto handler 'workflowService'>
+2012-11-06 13:49:08,688 INFO [main] DefaultAnnotationHandlerMapping:.registerHandler(411) - <Mapped URL path [/services/stopWorkflowService] onto handler 'workflowService'>
+2012-11-06 13:49:08,780 ERROR [main] TestContextManager:.prepareTestInstance(324) - <Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1664023c] to prepare test instance [com.demo.rest.WorkflowServiceTest@7fcebc9f]>
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.demo.rest.WorkflowServiceTest': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springframework.mock.web.MockHttpServletRequest com.demo.rest.WorkflowServiceTest.request; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No matching bean of type [org.springframework.mock.web.MockHttpServletRequest] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:285)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1074)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:374)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:110)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:301)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:303)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:49)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springframework.mock.web.MockHttpServletRequest com.demo.rest.WorkflowServiceTest.request; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No matching bean of type [org.springframework.mock.web.MockHttpServletRequest] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:502)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:84)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:282)
+	... 26 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No matching bean of type [org.springframework.mock.web.MockHttpServletRequest] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:920)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:789)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:703)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:474)
+	... 28 more
+2012-11-06 13:49:08,790 INFO [Thread-0] GenericApplicationContext:.doClose(1002) - <Closing org.springframework.context.support.GenericApplicationContext@20c1f10e: startup date [Tue Nov 06 13:49:08 CST 2012]; root of context hierarchy>
+2012-11-06 13:49:08,791 INFO [Thread-0] DefaultListableBeanFactory:.destroySingletons(422) - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@f593af: defining beans [workflowService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.view.BeanNameViewResolver#0]; root of factory hierarchy>
+2012-11-06 13:51:29,369 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [applicationContext.xml]>
+2012-11-06 13:51:29,483 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from URL [file:WebRoot/WEB-INF/rest-servlet.xml]>
+2012-11-06 13:51:29,615 INFO [main] GenericApplicationContext:.prepareRefresh(456) - <Refreshing org.springframework.context.support.GenericApplicationContext@78dc6a77: startup date [Tue Nov 06 13:51:29 CST 2012]; root of context hierarchy>
+2012-11-06 13:51:29,676 INFO [main] DefaultListableBeanFactory:.preInstantiateSingletons(555) - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7aae3364: defining beans [workflowService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.view.BeanNameViewResolver#0]; root of factory hierarchy>
+2012-11-06 13:51:29,727 INFO [main] DefaultAnnotationHandlerMapping:.registerHandler(411) - <Mapped URL path [/services/startWorkflowService] onto handler 'workflowService'>
+2012-11-06 13:51:29,728 INFO [main] DefaultAnnotationHandlerMapping:.registerHandler(411) - <Mapped URL path [/services/getDecisionTask] onto handler 'workflowService'>
+2012-11-06 13:51:29,728 INFO [main] DefaultAnnotationHandlerMapping:.registerHandler(411) - <Mapped URL path [/services/stopWorkflowService] onto handler 'workflowService'>
+2012-11-06 13:51:29,818 ERROR [main] TestContextManager:.prepareTestInstance(324) - <Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@23e0512a] to prepare test instance [com.demo.rest.WorkflowServiceTest@5bf0aecc]>
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.demo.rest.WorkflowServiceTest': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No matching bean of type [org.springframework.mock.web.MockHttpServletRequest] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.annotation.Resource(shareable=true, mappedName=, description=, name=, type=class java.lang.Object, authenticationType=CONTAINER)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:300)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1074)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:374)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:110)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:301)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:303)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:49)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No matching bean of type [org.springframework.mock.web.MockHttpServletRequest] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.annotation.Resource(shareable=true, mappedName=, description=, name=, type=class java.lang.Object, authenticationType=CONTAINER)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:920)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:789)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:703)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:431)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:409)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:541)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:147)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:84)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:297)
+	... 26 more
+2012-11-06 13:51:29,830 INFO [Thread-0] GenericApplicationContext:.doClose(1002) - <Closing org.springframework.context.support.GenericApplicationContext@78dc6a77: startup date [Tue Nov 06 13:51:29 CST 2012]; root of context hierarchy>
+2012-11-06 13:51:29,832 INFO [Thread-0] DefaultListableBeanFactory:.destroySingletons(422) - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7aae3364: defining beans [workflowService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.view.BeanNameViewResolver#0]; root of factory hierarchy>
+2012-11-06 14:00:03,822 INFO [main] WorkflowService:.startWorkflow(26) - <Workflow service has been started .........>
+2012-11-06 14:03:14,100 INFO [main] WorkflowService:.startWorkflow(26) - <Workflow service has been started .........>
+2012-11-06 14:07:38,607 INFO [main] WorkflowService:.startWorkflow(26) - <Workflow service has been started .........>
+2012-11-06 14:15:03,446 INFO [main] WorkflowService:.getDecisionTask(43) - <get decision task from workflow!>
+2012-11-06 14:15:17,504 INFO [main] WorkflowService:.stopWorkflow(59) - <Workflow service has been stopped.......>
+2012-11-06 14:16:36,753 INFO [main] WorkflowService:.startWorkflow(26) - <Workflow service has been started .........>
+2012-11-06 14:16:42,606 INFO [main] WorkflowService:.getDecisionTask(43) - <get decision task from workflow!>
+2012-11-06 14:17:18,929 INFO [main] WorkflowService:.getDecisionTask(43) - <get decision task from workflow!>
+2012-11-06 14:17:24,295 INFO [main] WorkflowService:.stopWorkflow(59) - <Workflow service has been stopped.......>
+2012-11-06 14:18:01,001 INFO [main] WorkflowService:.stopWorkflow(59) - <Workflow service has been stopped.......>
+2012-11-06 14:48:33,635 INFO [main] WorkflowService:.startWorkflow(26) - <Workflow service has been started .........>
+2012-11-12 14:42:36,441 INFO [main] WorkflowService:.startWorkflow(34) - <Workflow service has been started .........>
+2012-11-12 14:59:12,639 INFO [main] Workflow:.initialize(77) - <initialize the Decision Task List!>
+2012-11-12 14:59:12,642 INFO [main] Workflow:.initialize(80) - <initialize the Activity Task List!>
+2012-11-12 14:59:12,643 INFO [main] Workflow:.initialize(84) - <initialize the History!>
+2012-11-12 14:59:12,645 INFO [main] WorkflowService:.startWorkflow(34) - <Workflow service has been started .........>
+2012-11-12 16:07:47,378 INFO [main] MyDataSource:.<init>(28) - <create connection pool !!>
+2012-11-12 16:07:47,381 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:07:47,560 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:07:47,577 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:07:47,588 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:07:47,600 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:07:47,610 INFO [main] MyDataSource:.<init>(28) - <create connection pool !!>
+2012-11-12 16:07:47,610 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:07:47,623 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:07:47,633 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:07:47,645 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:07:47,659 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:07:47,669 INFO [main] MyDataSource:.getConnection(40) - <get connection from datasource!>
+2012-11-12 16:07:47,693 INFO [main] MyDataSource:.free(53) - <release the connection to the connection pool!>
+2012-11-12 16:08:15,647 INFO [main] MyDataSource:.<init>(28) - <create connection pool !!>
+2012-11-12 16:08:15,650 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:08:15,821 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:08:15,837 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:08:15,847 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:08:15,859 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:08:15,868 INFO [main] MyDataSource:.<init>(28) - <create connection pool !!>
+2012-11-12 16:08:15,869 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:08:15,882 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:08:15,894 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:08:15,906 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:08:15,920 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:08:15,931 INFO [main] MyDataSource:.getConnection(40) - <get connection from datasource!>
+2012-11-12 16:08:15,945 INFO [main] MyDataSource:.free(53) - <release the connection to the connection pool!>
+2012-11-12 16:18:41,983 INFO [main] MyDataSource:.<init>(28) - <create connection pool !!>
+2012-11-12 16:18:41,987 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:18:42,173 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:18:42,188 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:18:42,199 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:18:42,210 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:18:42,220 INFO [main] MyDataSource:.<init>(28) - <create connection pool !!>
+2012-11-12 16:18:42,220 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:18:42,233 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:18:42,243 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:18:42,255 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:18:42,269 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:18:42,281 INFO [main] MyDataSource:.getConnection(40) - <get connection from datasource!>
+2012-11-12 16:18:42,306 INFO [main] MyDataSource:.free(53) - <release the connection to the connection pool!>
+2012-11-12 16:18:42,309 INFO [main] MyDataSource:.getConnection(40) - <get connection from datasource!>
+2012-11-12 16:18:42,311 INFO [main] Workflow:.initialize(97) - <initialize the Decision Task List!>
+2012-11-12 16:18:42,311 INFO [main] Workflow:.initialize(100) - <initialize the Activity Task List!>
+2012-11-12 16:18:42,312 INFO [main] Workflow:.initialize(104) - <initialize the History!>
+2012-11-12 16:18:42,314 INFO [main] MyDataSource:.free(53) - <release the connection to the connection pool!>
+2012-11-12 16:19:28,404 INFO [main] MyDataSource:.<init>(28) - <create connection pool !!>
+2012-11-12 16:19:28,407 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:19:28,594 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:19:28,609 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:19:28,621 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:19:28,632 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:19:28,643 INFO [main] MyDataSource:.<init>(28) - <create connection pool !!>
+2012-11-12 16:19:28,643 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:19:28,657 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:19:28,669 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:19:28,683 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:19:28,696 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:19:28,708 INFO [main] MyDataSource:.getConnection(40) - <get connection from datasource!>
+2012-11-12 16:19:28,722 INFO [main] Workflow:.initialize(97) - <initialize the Decision Task List!>
+2012-11-12 16:19:28,722 INFO [main] Workflow:.initialize(100) - <initialize the Activity Task List!>
+2012-11-12 16:19:28,723 INFO [main] Workflow:.initialize(104) - <initialize the History!>
+2012-11-12 16:19:28,725 INFO [main] MyDataSource:.free(53) - <release the connection to the connection pool!>
+2012-11-12 16:26:11,392 INFO [main] MyDataSource:.<init>(28) - <create connection pool !!>
+2012-11-12 16:26:11,395 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:26:11,615 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:26:11,633 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:26:11,646 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:26:11,660 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:26:11,673 INFO [main] MyDataSource:.<init>(28) - <create connection pool !!>
+2012-11-12 16:26:11,674 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:26:11,691 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:26:11,705 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:26:11,720 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:26:11,746 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:26:11,759 INFO [main] MyDataSource:.getConnection(40) - <get connection from datasource!>
+2012-11-12 16:26:11,778 INFO [main] Workflow:.initialize(97) - <initialize the Decision Task List!>
+2012-11-12 16:26:11,778 INFO [main] Workflow:.initialize(100) - <initialize the Activity Task List!>
+2012-11-12 16:26:11,779 INFO [main] Workflow:.initialize(104) - <initialize the History!>
+2012-11-12 16:26:11,782 INFO [main] MyDataSource:.free(53) - <release the connection to the connection pool!>
+2012-11-12 16:32:26,434 INFO [main] MyDataSource:.<init>(28) - <create connection pool !!>
+2012-11-12 16:32:26,437 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:32:26,628 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:32:26,641 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:32:26,652 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:32:26,664 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:32:26,674 INFO [main] MyDataSource:.<init>(28) - <create connection pool !!>
+2012-11-12 16:32:26,675 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:32:26,688 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:32:26,699 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:32:26,714 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:32:26,728 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:32:26,741 INFO [main] MyDataSource:.getConnection(40) - <get connection from datasource!>
+2012-11-12 16:32:26,780 INFO [main] MyDataSource:.free(53) - <release the connection to the connection pool!>
+2012-11-12 16:32:26,781 INFO [main] MyDataSource:.getConnection(40) - <get connection from datasource!>
+2012-11-12 16:32:26,784 INFO [main] MyDataSource:.free(53) - <release the connection to the connection pool!>
+2012-11-12 16:34:30,190 INFO [main] MyDataSource:.<init>(28) - <create connection pool !!>
+2012-11-12 16:34:30,193 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:34:30,375 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:34:30,389 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:34:30,400 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:34:30,412 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:34:30,422 INFO [main] MyDataSource:.<init>(28) - <create connection pool !!>
+2012-11-12 16:34:30,422 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:34:30,435 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:34:30,446 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:34:30,457 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:34:30,472 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:34:30,484 INFO [main] MyDataSource:.getConnection(40) - <get connection from datasource!>
+2012-11-12 16:34:30,502 INFO [main] MyDataSource:.free(53) - <release the connection to the connection pool!>
+2012-11-12 16:34:30,504 INFO [main] MyDataSource:.getConnection(40) - <get connection from datasource!>
+2012-11-12 16:34:30,507 INFO [main] Workflow:.initialize(97) - <initialize the Decision Task List!>
+2012-11-12 16:34:30,508 INFO [main] Workflow:.initialize(100) - <initialize the Activity Task List!>
+2012-11-12 16:34:30,508 INFO [main] Workflow:.initialize(104) - <initialize the History!>
+2012-11-12 16:34:30,511 INFO [main] MyDataSource:.free(53) - <release the connection to the connection pool!>
+2012-11-12 16:36:01,698 INFO [main] MyDataSource:.<init>(28) - <create connection pool !!>
+2012-11-12 16:36:01,700 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:36:01,880 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:36:01,894 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:36:01,905 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:36:01,917 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:36:01,927 INFO [main] MyDataSource:.<init>(28) - <create connection pool !!>
+2012-11-12 16:36:01,927 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:36:01,940 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:36:01,952 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:36:01,967 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:36:01,980 INFO [main] MyDataSource:.createConnection(59) - <create connections !!>
+2012-11-12 16:36:01,992 INFO [main] MyDataSource:.getConnection(40) - <get connection from datasource!>
+2012-11-12 16:36:02,010 INFO [main] MyDataSource:.free(53) - <release the connection to the connection pool!>
+2012-11-13 17:09:17,845 INFO [main] Workflow:.initialize(97) - <initialize the Decision Task List!>
+2012-11-13 17:09:17,848 INFO [main] Workflow:.initialize(100) - <initialize the Activity Task List!>
+2012-11-13 17:09:17,849 INFO [main] Workflow:.initialize(104) - <initialize the History!>
+2012-11-13 17:15:42,490 INFO [main] ClassPathXmlApplicationContext:.prepareRefresh(456) - <Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@49362012: startup date [Tue Nov 13 17:15:42 CST 2012]; root of context hierarchy>
+2012-11-13 17:15:42,555 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [applicationContext.xml]>
+2012-11-13 17:15:42,779 INFO [main] DefaultListableBeanFactory:.preInstantiateSingletons(555) - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3acafb56: defining beans [dataSource,jdbcTemplate,restDao]; root of factory hierarchy>
+2012-11-13 17:15:42,874 INFO [main] DefaultListableBeanFactory:.destroySingletons(422) - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3acafb56: defining beans [dataSource,jdbcTemplate,restDao]; root of factory hierarchy>
+2012-11-13 17:16:57,317 INFO [main] ClassPathXmlApplicationContext:.prepareRefresh(456) - <Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@49362012: startup date [Tue Nov 13 17:16:57 CST 2012]; root of context hierarchy>
+2012-11-13 17:16:57,382 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [applicationContext.xml]>
+2012-11-13 17:16:57,559 INFO [main] DefaultListableBeanFactory:.preInstantiateSingletons(555) - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3f3f210f: defining beans [dataSource,jdbcTemplate,restDao]; root of factory hierarchy>
+2012-11-13 17:16:57,647 INFO [main] DefaultListableBeanFactory:.destroySingletons(422) - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3f3f210f: defining beans [dataSource,jdbcTemplate,restDao]; root of factory hierarchy>
+2012-11-13 17:17:58,566 INFO [main] ClassPathXmlApplicationContext:.prepareRefresh(456) - <Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@49362012: startup date [Tue Nov 13 17:17:58 CST 2012]; root of context hierarchy>
+2012-11-13 17:17:58,620 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [applicationContext.xml]>
+2012-11-13 17:17:58,767 INFO [main] DefaultListableBeanFactory:.preInstantiateSingletons(555) - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@388530b8: defining beans [dataSource,jdbcTemplate,restDao]; root of factory hierarchy>
+2012-11-13 17:17:58,851 INFO [main] DefaultListableBeanFactory:.destroySingletons(422) - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@388530b8: defining beans [dataSource,jdbcTemplate,restDao]; root of factory hierarchy>
+2012-11-13 17:19:21,456 INFO [main] ClassPathXmlApplicationContext:.prepareRefresh(456) - <Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27bc82e7: startup date [Tue Nov 13 17:19:21 CST 2012]; root of context hierarchy>
+2012-11-13 17:19:21,510 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [applicationContext.xml]>
+2012-11-13 17:19:21,669 INFO [main] DefaultListableBeanFactory:.preInstantiateSingletons(555) - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@388530b8: defining beans [dataSource,jdbcTemplate,restDaoImpl]; root of factory hierarchy>
+2012-11-13 17:19:21,751 INFO [main] DefaultListableBeanFactory:.destroySingletons(422) - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@388530b8: defining beans [dataSource,jdbcTemplate,restDaoImpl]; root of factory hierarchy>
+2012-11-13 17:20:42,817 INFO [main] ClassPathXmlApplicationContext:.prepareRefresh(456) - <Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@73a34b: startup date [Tue Nov 13 17:20:42 CST 2012]; root of context hierarchy>
+2012-11-13 17:20:42,877 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [applicationContext.xml]>
+2012-11-13 17:20:43,048 INFO [main] DefaultListableBeanFactory:.preInstantiateSingletons(555) - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@783c342b: defining beans [dataSource,jdbcTemplate,restDaoImpl]; root of factory hierarchy>
+2012-11-13 17:20:43,140 INFO [main] DefaultListableBeanFactory:.destroySingletons(422) - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@783c342b: defining beans [dataSource,jdbcTemplate,restDaoImpl]; root of factory hierarchy>
+2012-11-13 17:22:07,463 INFO [main] ClassPathXmlApplicationContext:.prepareRefresh(456) - <Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@49362012: startup date [Tue Nov 13 17:22:07 CST 2012]; root of context hierarchy>
+2012-11-13 17:22:07,524 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [applicationContext.xml]>
+2012-11-13 17:22:07,683 INFO [main] DefaultListableBeanFactory:.preInstantiateSingletons(555) - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@49938039: defining beans [dataSource,jdbcTemplate,restDaoImpl]; root of factory hierarchy>
+2012-11-13 17:22:07,769 INFO [main] Workflow:.initialize(97) - <initialize the Decision Task List!>
+2012-11-13 17:22:07,769 INFO [main] Workflow:.initialize(100) - <initialize the Activity Task List!>
+2012-11-13 17:22:07,770 INFO [main] Workflow:.initialize(104) - <initialize the History!>
+2012-11-13 17:23:31,601 INFO [main] ClassPathXmlApplicationContext:.prepareRefresh(456) - <Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@49362012: startup date [Tue Nov 13 17:23:31 CST 2012]; root of context hierarchy>
+2012-11-13 17:23:31,666 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [applicationContext.xml]>
+2012-11-13 17:23:31,904 INFO [main] PropertyPlaceholderConfigurer:.loadProperties(177) - <Loading properties file from class path resource [dbcp.properties]>
+2012-11-13 17:23:31,926 INFO [main] DefaultListableBeanFactory:.preInstantiateSingletons(555) - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@72c743eb: defining beans [placeholderConfig,dataSource,jdbcTemplate,restDaoImpl]; root of factory hierarchy>
+2012-11-13 17:23:31,987 INFO [main] Workflow:.initialize(97) - <initialize the Decision Task List!>
+2012-11-13 17:23:32,173 INFO [main] Workflow:.initialize(100) - <initialize the Activity Task List!>
+2012-11-13 17:23:32,173 INFO [main] Workflow:.initialize(104) - <initialize the History!>
+2012-11-13 17:23:56,879 INFO [main] ClassPathXmlApplicationContext:.prepareRefresh(456) - <Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27bc82e7: startup date [Tue Nov 13 17:23:56 CST 2012]; root of context hierarchy>
+2012-11-13 17:23:56,932 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [applicationContext.xml]>
+2012-11-13 17:23:57,126 INFO [main] PropertyPlaceholderConfigurer:.loadProperties(177) - <Loading properties file from class path resource [dbcp.properties]>
+2012-11-13 17:23:57,136 INFO [main] DefaultListableBeanFactory:.preInstantiateSingletons(555) - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3f3f210f: defining beans [placeholderConfig,dataSource,jdbcTemplate,restDaoImpl]; root of factory hierarchy>
+2012-11-13 17:23:57,176 INFO [main] Workflow:.initialize(97) - <initialize the Decision Task List!>
+2012-11-13 17:23:57,177 INFO [main] Workflow:.initialize(100) - <initialize the Activity Task List!>
+2012-11-13 17:23:57,177 INFO [main] Workflow:.initialize(104) - <initialize the History!>
+2012-11-13 17:23:57,377 INFO [main] Workflow:.initialize(97) - <initialize the Decision Task List!>
+2012-11-13 17:23:57,378 INFO [main] Workflow:.initialize(100) - <initialize the Activity Task List!>
+2012-11-13 17:23:57,378 INFO [main] Workflow:.initialize(104) - <initialize the History!>
+2012-11-13 17:23:57,396 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]>
+2012-11-13 17:23:57,445 INFO [main] SQLErrorCodesFactory:.<init>(126) - <SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]>
+2012-11-13 17:25:07,116 INFO [main] ClassPathXmlApplicationContext:.prepareRefresh(456) - <Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@49362012: startup date [Tue Nov 13 17:25:07 CST 2012]; root of context hierarchy>
+2012-11-13 17:25:07,167 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [applicationContext.xml]>
+2012-11-13 17:25:07,375 INFO [main] PropertyPlaceholderConfigurer:.loadProperties(177) - <Loading properties file from class path resource [dbcp.properties]>
+2012-11-13 17:25:07,385 INFO [main] DefaultListableBeanFactory:.preInstantiateSingletons(555) - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@72c743eb: defining beans [placeholderConfig,dataSource,jdbcTemplate,restDaoImpl]; root of factory hierarchy>
+2012-11-13 17:25:07,426 INFO [main] Workflow:.initialize(97) - <initialize the Decision Task List!>
+2012-11-13 17:25:07,427 INFO [main] Workflow:.initialize(100) - <initialize the Activity Task List!>
+2012-11-13 17:25:07,427 INFO [main] Workflow:.initialize(104) - <initialize the History!>
+2012-11-13 17:25:07,626 INFO [main] Workflow:.initialize(97) - <initialize the Decision Task List!>
+2012-11-13 17:25:07,626 INFO [main] Workflow:.initialize(100) - <initialize the Activity Task List!>
+2012-11-13 17:25:07,626 INFO [main] Workflow:.initialize(104) - <initialize the History!>
+2012-11-13 17:25:23,262 INFO [main] ClassPathXmlApplicationContext:.prepareRefresh(456) - <Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@49362012: startup date [Tue Nov 13 17:25:23 CST 2012]; root of context hierarchy>
+2012-11-13 17:25:23,316 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [applicationContext.xml]>
+2012-11-13 17:25:23,513 INFO [main] PropertyPlaceholderConfigurer:.loadProperties(177) - <Loading properties file from class path resource [dbcp.properties]>
+2012-11-13 17:25:23,524 INFO [main] DefaultListableBeanFactory:.preInstantiateSingletons(555) - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@49938039: defining beans [placeholderConfig,dataSource,jdbcTemplate,restDaoImpl]; root of factory hierarchy>
+2012-11-13 17:25:23,568 INFO [main] Workflow:.initialize(97) - <initialize the Decision Task List!>
+2012-11-13 17:25:23,568 INFO [main] Workflow:.initialize(100) - <initialize the Activity Task List!>
+2012-11-13 17:25:23,569 INFO [main] Workflow:.initialize(104) - <initialize the History!>
+2012-11-13 17:25:38,009 INFO [main] ClassPathXmlApplicationContext:.prepareRefresh(456) - <Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@49362012: startup date [Tue Nov 13 17:25:38 CST 2012]; root of context hierarchy>
+2012-11-13 17:25:38,061 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [applicationContext.xml]>
+2012-11-13 17:25:38,246 INFO [main] PropertyPlaceholderConfigurer:.loadProperties(177) - <Loading properties file from class path resource [dbcp.properties]>
+2012-11-13 17:25:38,256 INFO [main] DefaultListableBeanFactory:.preInstantiateSingletons(555) - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3f3f210f: defining beans [placeholderConfig,dataSource,jdbcTemplate,restDaoImpl]; root of factory hierarchy>
+2012-11-13 17:25:38,302 INFO [main] Workflow:.initialize(97) - <initialize the Decision Task List!>
+2012-11-13 17:25:38,303 INFO [main] Workflow:.initialize(100) - <initialize the Activity Task List!>
+2012-11-13 17:25:38,303 INFO [main] Workflow:.initialize(104) - <initialize the History!>
+2012-11-13 17:27:14,807 INFO [main] ClassPathXmlApplicationContext:.prepareRefresh(456) - <Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27e59128: startup date [Tue Nov 13 17:27:14 CST 2012]; root of context hierarchy>
+2012-11-13 17:27:14,858 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [applicationContext.xml]>
+2012-11-13 17:27:15,055 INFO [main] PropertyPlaceholderConfigurer:.loadProperties(177) - <Loading properties file from class path resource [dbcp.properties]>
+2012-11-13 17:27:15,068 INFO [main] DefaultListableBeanFactory:.preInstantiateSingletons(555) - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@72c743eb: defining beans [placeholderConfig,dataSource,jdbcTemplate,restDaoImpl]; root of factory hierarchy>
+2012-11-13 17:27:15,111 INFO [main] Workflow:.initialize(97) - <initialize the Decision Task List!>
+2012-11-13 17:27:15,111 INFO [main] Workflow:.initialize(100) - <initialize the Activity Task List!>
+2012-11-13 17:27:15,111 INFO [main] Workflow:.initialize(104) - <initialize the History!>
+2012-11-13 17:27:52,562 INFO [main] ClassPathXmlApplicationContext:.prepareRefresh(456) - <Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@49362012: startup date [Tue Nov 13 17:27:52 CST 2012]; root of context hierarchy>
+2012-11-13 17:27:52,618 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [applicationContext.xml]>
+2012-11-13 17:27:52,801 INFO [main] PropertyPlaceholderConfigurer:.loadProperties(177) - <Loading properties file from class path resource [dbcp.properties]>
+2012-11-13 17:27:52,813 INFO [main] DefaultListableBeanFactory:.preInstantiateSingletons(555) - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@783c342b: defining beans [placeholderConfig,dataSource,jdbcTemplate,restDaoImpl]; root of factory hierarchy>
+2012-11-13 17:27:52,853 INFO [main] Workflow:.initialize(97) - <initialize the Decision Task List!>
+2012-11-13 17:27:52,853 INFO [main] Workflow:.initialize(100) - <initialize the Activity Task List!>
+2012-11-13 17:27:52,854 INFO [main] Workflow:.initialize(104) - <initialize the History!>
+2012-11-19 09:30:19,054 INFO [main] ClassPathXmlApplicationContext:.prepareRefresh(456) - <Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27bc82e7: startup date [Mon Nov 19 09:30:19 CST 2012]; root of context hierarchy>
+2012-11-19 09:30:19,118 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [applicationContext.xml]>
+2012-11-19 09:30:19,335 INFO [main] PropertyPlaceholderConfigurer:.loadProperties(177) - <Loading properties file from class path resource [dbcp.properties]>
+2012-11-19 09:30:19,351 INFO [main] DefaultListableBeanFactory:.preInstantiateSingletons(555) - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@23abcc03: defining beans [placeholderConfig,dataSource,jdbcTemplate,namedParameterJdbcTemplate,restDaoImpl]; root of factory hierarchy>
+2012-11-19 09:30:19,431 INFO [main] Workflow:.initialize(112) - <initialize the Decision Task List!>
+2012-11-19 09:30:19,432 INFO [main] Workflow:.initialize(115) - <initialize the Activity Task List!>
+2012-11-19 09:30:19,432 INFO [main] Workflow:.initialize(119) - <initialize the History!>
+2012-11-19 09:30:46,537 INFO [main] ClassPathXmlApplicationContext:.prepareRefresh(456) - <Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@49362012: startup date [Mon Nov 19 09:30:46 CST 2012]; root of context hierarchy>
+2012-11-19 09:30:46,595 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [applicationContext.xml]>
+2012-11-19 09:30:46,794 INFO [main] PropertyPlaceholderConfigurer:.loadProperties(177) - <Loading properties file from class path resource [dbcp.properties]>
+2012-11-19 09:30:46,806 INFO [main] DefaultListableBeanFactory:.preInstantiateSingletons(555) - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@30419d05: defining beans [placeholderConfig,dataSource,jdbcTemplate,namedParameterJdbcTemplate,restDaoImpl]; root of factory hierarchy>
+2012-11-19 09:30:46,886 INFO [main] Workflow:.initialize(112) - <initialize the Decision Task List!>
+2012-11-19 09:30:46,886 INFO [main] Workflow:.initialize(115) - <initialize the Activity Task List!>
+2012-11-19 09:30:46,886 INFO [main] Workflow:.initialize(119) - <initialize the History!>
+2012-11-19 09:30:47,087 INFO [main] Workflow:.initialize(112) - <initialize the Decision Task List!>
+2012-11-19 09:30:47,087 INFO [main] Workflow:.initialize(115) - <initialize the Activity Task List!>
+2012-11-19 09:30:47,088 INFO [main] Workflow:.initialize(119) - <initialize the History!>
+2012-11-19 09:31:04,918 INFO [main] ClassPathXmlApplicationContext:.prepareRefresh(456) - <Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@73a34b: startup date [Mon Nov 19 09:31:04 CST 2012]; root of context hierarchy>
+2012-11-19 09:31:04,971 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [applicationContext.xml]>
+2012-11-19 09:31:05,160 INFO [main] PropertyPlaceholderConfigurer:.loadProperties(177) - <Loading properties file from class path resource [dbcp.properties]>
+2012-11-19 09:31:05,170 INFO [main] DefaultListableBeanFactory:.preInstantiateSingletons(555) - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@783c342b: defining beans [placeholderConfig,dataSource,jdbcTemplate,namedParameterJdbcTemplate,restDaoImpl]; root of factory hierarchy>
+2012-11-19 09:31:05,238 INFO [main] Workflow:.initialize(112) - <initialize the Decision Task List!>
+2012-11-19 09:31:05,239 INFO [main] Workflow:.initialize(115) - <initialize the Activity Task List!>
+2012-11-19 09:31:05,239 INFO [main] Workflow:.initialize(119) - <initialize the History!>
+2012-11-19 09:31:22,661 INFO [main] ClassPathXmlApplicationContext:.prepareRefresh(456) - <Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27bc82e7: startup date [Mon Nov 19 09:31:22 CST 2012]; root of context hierarchy>
+2012-11-19 09:31:22,718 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [applicationContext.xml]>
+2012-11-19 09:31:22,904 INFO [main] PropertyPlaceholderConfigurer:.loadProperties(177) - <Loading properties file from class path resource [dbcp.properties]>
+2012-11-19 09:31:22,914 INFO [main] DefaultListableBeanFactory:.preInstantiateSingletons(555) - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@30419d05: defining beans [placeholderConfig,dataSource,jdbcTemplate,namedParameterJdbcTemplate,restDaoImpl]; root of factory hierarchy>
+2012-11-19 09:31:22,981 INFO [main] Workflow:.initialize(112) - <initialize the Decision Task List!>
+2012-11-19 09:31:22,982 INFO [main] Workflow:.initialize(115) - <initialize the Activity Task List!>
+2012-11-19 09:31:22,982 INFO [main] Workflow:.initialize(119) - <initialize the History!>
+2012-11-19 09:34:33,351 INFO [main] ClassPathXmlApplicationContext:.prepareRefresh(456) - <Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@73a34b: startup date [Mon Nov 19 09:34:33 CST 2012]; root of context hierarchy>
+2012-11-19 09:34:33,418 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [applicationContext.xml]>
+2012-11-19 09:34:33,604 INFO [main] PropertyPlaceholderConfigurer:.loadProperties(177) - <Loading properties file from class path resource [dbcp.properties]>
+2012-11-19 09:34:33,619 INFO [main] DefaultListableBeanFactory:.preInstantiateSingletons(555) - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@388530b8: defining beans [placeholderConfig,dataSource,jdbcTemplate,namedParameterJdbcTemplate,restDaoImpl]; root of factory hierarchy>
+2012-11-19 09:34:33,695 INFO [main] Workflow:.initialize(112) - <initialize the Decision Task List!>
+2012-11-19 09:34:33,695 INFO [main] Workflow:.initialize(115) - <initialize the Activity Task List!>
+2012-11-19 09:34:33,695 INFO [main] Workflow:.initialize(119) - <initialize the History!>
+2012-11-19 09:37:47,379 INFO [main] ClassPathXmlApplicationContext:.prepareRefresh(456) - <Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27bc82e7: startup date [Mon Nov 19 09:37:47 CST 2012]; root of context hierarchy>
+2012-11-19 09:37:47,433 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [applicationContext.xml]>
+2012-11-19 09:37:47,627 INFO [main] PropertyPlaceholderConfigurer:.loadProperties(177) - <Loading properties file from class path resource [dbcp.properties]>
+2012-11-19 09:37:47,639 INFO [main] DefaultListableBeanFactory:.preInstantiateSingletons(555) - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@388530b8: defining beans [placeholderConfig,dataSource,jdbcTemplate,namedParameterJdbcTemplate,restDaoImpl]; root of factory hierarchy>
+2012-11-19 09:37:47,718 INFO [main] Workflow:.initialize(112) - <initialize the Decision Task List!>
+2012-11-19 09:37:47,718 INFO [main] Workflow:.initialize(115) - <initialize the Activity Task List!>
+2012-11-19 09:37:47,718 INFO [main] Workflow:.initialize(119) - <initialize the History!>
+2012-11-19 09:58:35,970 INFO [main] ClassPathXmlApplicationContext:.prepareRefresh(456) - <Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27bc82e7: startup date [Mon Nov 19 09:58:35 CST 2012]; root of context hierarchy>
+2012-11-19 09:58:36,024 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [applicationContext.xml]>
+2012-11-19 09:58:36,221 INFO [main] PropertyPlaceholderConfigurer:.loadProperties(177) - <Loading properties file from class path resource [dbcp.properties]>
+2012-11-19 09:58:36,232 INFO [main] DefaultListableBeanFactory:.preInstantiateSingletons(555) - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4026e9f9: defining beans [placeholderConfig,dataSource,jdbcTemplate,namedParameterJdbcTemplate,restDaoImpl]; root of factory hierarchy>
+2012-11-19 09:58:36,311 INFO [main] Workflow:.initialize(112) - <initialize the Decision Task List!>
+2012-11-19 09:58:36,312 INFO [main] Workflow:.initialize(115) - <initialize the Activity Task List!>
+2012-11-19 09:58:36,312 INFO [main] Workflow:.initialize(119) - <initialize the History!>
+2012-11-19 10:24:16,689 INFO [main] ClassPathXmlApplicationContext:.prepareRefresh(456) - <Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@49362012: startup date [Mon Nov 19 10:24:16 CST 2012]; root of context hierarchy>
+2012-11-19 10:24:16,742 INFO [main] XmlBeanDefinitionReader:.loadBeanDefinitions(315) - <Loading XML bean definitions from class path resource [applicationContext.xml]>
+2012-11-19 10:24:16,937 INFO [main] PropertyPlaceholderConfigurer:.loadProperties(177) - <Loading properties file from class path resource [dbcp.properties]>
+2012-11-19 10:24:16,947 INFO [main] DefaultListableBeanFactory:.preInstantiateSingletons(555) - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@30419d05: defining beans [placeholderConfig,dataSource,jdbcTemplate,namedParameterJdbcTemplate,restDaoImpl]; root of factory hierarchy>
+2012-11-19 10:24:17,023 INFO [main] Workflow:.initialize(112) - <initialize the Decision Task List!>
+2012-11-19 10:24:17,023 INFO [main] Workflow:.initialize(115) - <initialize the Activity Task List!>
+2012-11-19 10:24:17,024 INFO [main] Workflow:.initialize(119) - <initialize the History!>
